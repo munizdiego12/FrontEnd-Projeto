@@ -1,44 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'> 
-    <link rel="stylesheet" href="styles.css">
-
-    <title>Login Projeto +Limpo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Login Projeto +Limpo</title>
 </head>
+<body class="pagina-login">
+  <!-- LOGO FORA DA CONTAINER -->
+<div class="logo">
+  <img src="img/LogoMaisLimpo.png" alt="Logo" class="logo-site">
+</div>
 
-<body>
-    <main class="container">
-        <form action="principal.html" method="POST"> <!-- Aqui você pode depois ajustar para o back-end -->
-            <h1>Login</h1>
-            <div class="input-box">
-                <i class="bx bxs-user"></i>
-                <input placeholder="Usuário" type="email">
-            </div>
-            <div class="input-box">
-                <i class="bx bxs-lock-alt"></i>
-                <input placeholder="Senha" type="password">
-            </div>
+  <main class="container">
+    <form action="principal.html" method="POST">
+        
 
-            <div class="remember-forgot">
-                <label>
-                    <input type="checkbox">
-                    Lembrar senha
-                </label>
-                <a href="#">Esqueci minha senha</a>
-            </div>
+      <h1>Login</h1>
 
-            <button type="submit" class="login">Login</button>
+      <p>Bem-vindo ao projeto +Limpo! Por favor, insira suas credenciais para acessar sua conta.</p>
 
-            <div class="register-link">
-                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-            </div>
-        </form>
+      <div class="input-box">
+        <i class="bx bxs-user"></i>
+        <input type="email" id="email" name="email" required />
+        <label for="email">E-mail</label>
+      </div>
 
+      <div class="input-box">
+        <i class="bx bxs-lock-alt"></i>
+        <input type="password" id="senha" name="senha" required />
+        <label for="senha">Senha</label>
+      </div>
 
-    </main>
-    
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Lembrar senha</label>
+        <a href="#">Esqueci minha senha</a>
+      </div>
+
+      <button type="submit" class="login">Login</button>
+
+      <div class="register-link">
+        <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
